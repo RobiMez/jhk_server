@@ -4,8 +4,7 @@ const morgan =require( 'morgan')
 const cors =require( 'cors')
 
 const app = express()
-const port = 4242
-
+const port = process.env.PORT || 3333;
 app.disable('x-powered-by')
 
 app.use(cors())
